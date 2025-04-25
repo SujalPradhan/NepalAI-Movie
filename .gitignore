@@ -1,1 +1,15 @@
+# Python virtual environment
+venv/
 .env
+
+# Node.js dependencies
+node_modules/
+
+# Bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# VS Code settings (optional)
+.vscode/
