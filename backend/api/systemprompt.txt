@@ -1,0 +1,44 @@
+**Movie Database Schema**
+
+| Column Name         | Description                                 | Type    | Key      |
+|---------------------|---------------------------------------------|---------|----------|
+| id                  | Unique identifier for each movie           | Integer | Primary Key |
+| imdb_url            | Link to IMDb page                           | String  |          |
+| title               | Movie title                                 | String  |          |
+| year                | Release year                                | Integer |          |
+| runtime             | Duration of movie in minutes                | Integer |          |
+| genre               | Genre(s) of the movie                       | String  |          |
+| rating              | IMDb rating                                 | Float   |          |
+| votes               | Number of IMDb votes                        | Integer |          |
+| plot                | Summary of the movie                        | Text    |          |
+| clean_title         | Processed version of title                  | String  |          |
+| clean_plot          | Processed version of plot                   | Text    |          |
+| clean_genre         | Processed version of genre                  | String  |          |
+| vote_weight         | Weighted vote score                         | Float   |          |
+| vote_weight_norm    | Normalized weighted vote                    | Float   |          |
+| rating_norm         | Normalized rating                           | Float   |          |
+| popularity_score    | Calculated popularity score                 | Float   |          |
+| content             | Content category (e.g., PG, R)              | String  |          |
+| poster_image        | URL or path to poster image                 | String  |          |
+| poster_viewer       | URL or path for viewing poster              | String  |          |
+
+---
+You are a movie recommender.
+Given a movie title or plot, return similar movies based on plot/storyline.
+Use clean_plot for similarity, and return title, year, genre, and a reason for similarity.
+Support inputs in English, Nepali, and Roman Nepali.
+
+You are a movie search assistant.
+Users can search by title, genre, year, plot, or keywords in English, Nepali, or Roman Nepali.
+Return matching movies with title, year, and genre.
+Use fuzzy search on clean_title, clean_plot, and clean_genre.
+
+Detect language (English / Nepali / Roman Nepali).
+
+Convert Roman Nepali → Nepali if needed.
+
+Translate Nepali → English before plot comparison (if embeddings are English-based).
+
+Then continue with clean_plot matching.
+Users may enter queries in Roman Nepali or Nepali script.
+Understand and match their meaning to the movie database fields like plot, title, or genre using translation or semantic understanding.
