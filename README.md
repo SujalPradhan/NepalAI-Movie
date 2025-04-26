@@ -19,9 +19,7 @@ NepalAI Movie is an intelligent platform designed to help users discover and exp
 - **Responsive Design**: Modern UI that works seamlessly across desktop and mobile devices
 - **User Authentication**: Secure login system with personalized user profiles
 
-## Screenshots
 
-*(Screenshots will be added here when available)*
 
 ## Technology Stack
 
@@ -40,7 +38,6 @@ NepalAI Movie is an intelligent platform designed to help users discover and exp
 ### Development Tools
 - Git & GitHub
 - VS Code
-- Docker (optional)
 
 ## Installation
 
@@ -121,7 +118,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgments
 
-- Thanks to all contributors who have helped build this project
 - Special thanks to the Nepali film industry for their incredible work
 - Thanks to NISH1001 for the NepalIMDB dataset
 
